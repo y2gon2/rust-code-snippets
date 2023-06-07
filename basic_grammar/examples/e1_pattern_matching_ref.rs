@@ -3,7 +3,6 @@
 fn main() {
     let x = 5;
     let y = &x;
-    let z = &y;
 
     match y {
         &a => println!("{}", a), // &a : i32

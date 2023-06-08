@@ -3,22 +3,17 @@
 version = 3
 
 [[package]]
-name = "anti_patterns"
-version = "0.1.0"
-
-[[package]]
-name = "basic_grammar"
-version = "0.1.0"
-
-[[package]]
 name = "cfg-if"
 version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
-name = "data_structures"
+name = "ch2"
 version = "0.1.0"
+dependencies = [
+ "rand",
+]
 
 [[package]]
 name = "getrandom"
@@ -74,10 +69,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "rust-code-snippets"
-version = "0.1.0"
-
-[[package]]
 name = "wasi"
 version = "0.11.0+wasi-snapshot-preview1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -86,6 +77,3 @@ checksum = "9c8d87e72b64a3b4db28d11ce29237c246188f4f51057d65a7eab63b7987e423"
 [[package]]
 name = "wikibook_kujira"
 version = "0.1.0"
-dependencies = [
- "rand",
-]

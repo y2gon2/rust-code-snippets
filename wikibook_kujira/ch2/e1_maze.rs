@@ -7,7 +7,7 @@ fn main() {
     let mut maze: Vec<Vec<usize>> = Vec::new();
 
     // matrix setting
-    for i in 0..MAP_N {
+    for _ in 0..MAP_N {
         maze.push(vec![0; MAP_N]);
     }
 

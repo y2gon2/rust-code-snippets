@@ -15,5 +15,6 @@ members =[
     "anti_patterns",
     "wikibook_kujira",
     "process",
+    "syncronization",
 ]
 

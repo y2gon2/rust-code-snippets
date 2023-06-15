@@ -108,7 +108,7 @@ fn main() {
 
 // 4. a multithreading (mutex) accumulator
 use std::sync::{Arc, Mutex};
-use std::thread::{self, Thread};
+use std::thread::{self};
 
 const THREAD_NUM: usize = 4;
 
@@ -121,7 +121,7 @@ fn accumulator(i: usize, input: Arc<Mutex<usize>>) {
 }
 
 fn main() {
-    let mut cnt = Arc::new(Mutex::new(0_usize));
+    let cnt = Arc::new(Mutex::new(0_usize));
     let mut threads = Vec::with_capacity(THREAD_NUM);
 
     (0..THREAD_NUM).for_each(|i| {

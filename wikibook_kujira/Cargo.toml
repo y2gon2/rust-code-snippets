@@ -12,6 +12,29 @@ rand = "0.8.0"
 
 # ch3
 
+
+
+
 [[example]]
-name = "e1_maze"
-path = "ch2/e1_maze.rs"
+name = "01_maze"
+path = "ch2/01_maze.rs"
+
+[[example]]
+name = "02_counter"
+path = "ch2/02_counter.rs"
+
+[[example]]
+name = "03_sum_args"
+path = "ch2/03_sum_args.rs"
+
+[[example]]
+name = "04_read_file"
+path = "ch2/04_read_file.rs"
+
+[[example]]
+name = "05_recursive"
+path = "ch2/05_fib_recursive.rs"
+
+[[example]]
+name = "06_rec_findfile"
+path = "ch2/06_rec_findfile.rs"

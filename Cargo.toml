@@ -16,5 +16,6 @@ members =[
     "wikibook_kujira",
     "process",
     "syncronization",
+    "async_rust",
 ]
 

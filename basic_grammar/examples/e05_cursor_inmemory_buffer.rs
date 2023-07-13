@@ -27,9 +27,7 @@
 //!    입출력 작업의 성능을 개선하거나 복잡성을 줄일 수 있습니다. 이 때, Cursor를 사용하면 
 //!    입출력 스트림을 쉽게 다룰 수 있습니다.
 
-use std::io::Cursor;
 use serde::{Serialize, Deserialize};
-use bincode::{serialize_into, deserialize_from};
 
 #[derive(Serialize, Deserialize, PartialEq, Debug)]
 struct TestStruct {
@@ -44,6 +42,9 @@ fn main() {
 
 #[test]
 fn test_cursor() {
+    use std::io::Cursor;
+    use bincode::{serialize_into, deserialize_from};
+    
     let test_struct = TestStruct { a: 5, b: 10 };
     let mut buffer = Cursor::new(Vec::new());
     serialize_into(&mut buffer, &test_struct).unwrap();
